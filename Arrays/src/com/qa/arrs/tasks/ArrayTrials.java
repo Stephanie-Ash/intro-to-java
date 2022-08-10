@@ -1,6 +1,8 @@
 package com.qa.arrs.tasks;
 
 public class ArrayTrials {
+	int[] nums = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+	
 	public void createArray() {
 		int[] indexArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 		
@@ -23,13 +25,18 @@ public class ArrayTrials {
 		}
 	}
 	
-	public int[] enhancedForLoops() {
-		int[] nums = new int[20];
-		for(int i = 0; i < nums.length; i++) {
-			nums[i] = i + 1;
+	public void enhancedForLoops() {
+		for(int i : nums) {
+			System.out.println(i * i);
 		}
 		
-		return nums;
+		for(int i : nums) {
+			if(oddOrEven(i)) {
+				System.out.println(i * i * i);
+			} else {
+				System.out.println(i * i);
+			}
+		}
 	}
 	
 	public boolean oddOrEven(int x) {

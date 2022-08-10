@@ -9,19 +9,7 @@ public class Runner {
 		ArrayTrials arrayTasks = new ArrayTrials();
 		arrayTasks.createArray();
 		arrayTasks.createAltArray();
-		int[] nums = arrayTasks.enhancedForLoops();
-		
-		for(int i : nums) {
-			System.out.println(i * i);
-		}
-		
-		for(int i : nums) {
-			if(arrayTasks.oddOrEven(i)) {
-				System.out.println(i * i * i);
-			} else {
-				System.out.println(i * i);
-			}
-		}
+		arrayTasks.enhancedForLoops();
 		
 		ArrayListTrial arrayListTasks = new ArrayListTrial();
 		arrayListTasks.createArrayList();
